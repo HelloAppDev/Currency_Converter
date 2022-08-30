@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150F48D628B5D816007985E0 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F48D428B5D816007985E0 /* CalculateViewController.swift */; };
+		150F48D728B5D816007985E0 /* CalculateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150F48D528B5D816007985E0 /* CalculateViewController.xib */; };
+		150F48DA28B6BD5E007985E0 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F48D928B6BD5E007985E0 /* UIButton.swift */; };
+		150F48DE28BA54CB007985E0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F48DD28BA54CB007985E0 /* UIView.swift */; };
+		150F48E628BCC36D007985E0 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F48E528BCC36D007985E0 /* ParseManager.swift */; };
+		150F48FB28BD2E04007985E0 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F48FA28BD2E04007985E0 /* CurrencyModel.swift */; };
+		1536216E28AC27AE00698541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536216D28AC27AE00698541 /* AppDelegate.swift */; };
+		1536217028AC27AE00698541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536216F28AC27AE00698541 /* SceneDelegate.swift */; };
+		1536217728AC27AF00698541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1536217628AC27AF00698541 /* Assets.xcassets */; };
+		1536217A28AC27AF00698541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1536217828AC27AF00698541 /* LaunchScreen.storyboard */; };
+		1536218328AC282B00698541 /* CurrencyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536218228AC282B00698541 /* CurrencyListTableViewController.swift */; };
+		1536218728AC2A1100698541 /* FavouriteCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536218628AC2A1100698541 /* FavouriteCurrencyViewController.swift */; };
+		1536218B28AC2A8D00698541 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536218A28AC2A8D00698541 /* MainTabBarController.swift */; };
+		1536218E28AC2C8800698541 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536218D28AC2C8800698541 /* UIColor.swift */; };
+		1536219728AE91BE00698541 /* CurrencyModelDBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536219628AE91BE00698541 /* CurrencyModelDBO.swift */; };
+		153621A128B0FF0000698541 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536219F28B0FF0000698541 /* CurrencyTableViewCell.swift */; };
+		153621A228B0FF0000698541 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153621A028B0FF0000698541 /* CurrencyTableViewCell.xib */; };
+		153621A528B29A9D00698541 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 153621A428B29A9D00698541 /* Realm */; };
+		153621A728B29A9D00698541 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 153621A628B29A9D00698541 /* RealmSwift */; };
+		153621A928B29F6700698541 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153621A828B29F6700698541 /* StorageManager.swift */; };
+		153621B528B423D700698541 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153621B428B423D700698541 /* StringExtension.swift */; };
+		153621B728B4254100698541 /* TableViewSimilarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153621B628B4254100698541 /* TableViewSimilarSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		150F48D428B5D816007985E0 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		150F48D528B5D816007985E0 /* CalculateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculateViewController.xib; sourceTree = "<group>"; };
+		150F48D928B6BD5E007985E0 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		150F48DD28BA54CB007985E0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		150F48E528BCC36D007985E0 /* ParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseManager.swift; sourceTree = "<group>"; };
+		150F48FA28BD2E04007985E0 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		1536216A28AC27AE00698541 /* heLLo converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "heLLo converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1536216D28AC27AE00698541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1536216F28AC27AE00698541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1536217628AC27AF00698541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1536217928AC27AF00698541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1536217B28AC27AF00698541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1536218228AC282B00698541 /* CurrencyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewController.swift; sourceTree = "<group>"; };
+		1536218628AC2A1100698541 /* FavouriteCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCurrencyViewController.swift; sourceTree = "<group>"; };
+		1536218A28AC2A8D00698541 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1536218D28AC2C8800698541 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1536219628AE91BE00698541 /* CurrencyModelDBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModelDBO.swift; sourceTree = "<group>"; };
+		1536219F28B0FF0000698541 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		153621A028B0FF0000698541 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		153621A828B29F6700698541 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		153621B428B423D700698541 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		153621B628B4254100698541 /* TableViewSimilarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSimilarSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1536216728AC27AE00698541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153621A728B29A9D00698541 /* RealmSwift in Frameworks */,
+				153621A528B29A9D00698541 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150F48D828B5D94F007985E0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1536219F28B0FF0000698541 /* CurrencyTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		150F48E228BBE3CA007985E0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1536217628AC27AF00698541 /* Assets.xcassets */,
+				1536217B28AC27AF00698541 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		150F48E728BD17D9007985E0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				150F48E528BCC36D007985E0 /* ParseManager.swift */,
+				153621A828B29F6700698541 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1536216128AC27AE00698541 = {
+			isa = PBXGroup;
+			children = (
+				1536216C28AC27AE00698541 /* heLLo converter */,
+				1536216B28AC27AE00698541 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1536216B28AC27AE00698541 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1536216A28AC27AE00698541 /* heLLo converter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1536216C28AC27AE00698541 /* heLLo converter */ = {
+			isa = PBXGroup;
+			children = (
+				150F48E728BD17D9007985E0 /* Managers */,
+				150F48E228BBE3CA007985E0 /* Resource */,
+				150F48D828B5D94F007985E0 /* TableViewCells */,
+				1536218928AC2A7600698541 /* TabBarController */,
+				1536218828AC2A3E00698541 /* Source */,
+				1536218C28AC2C7300698541 /* Extension */,
+				1536218F28AE42AE00698541 /* Models */,
+				1536219C28B0D48300698541 /* Views */,
+				1536218128AC27FB00698541 /* ViewControllers */,
+			);
+			path = "heLLo converter";
+			sourceTree = "<group>";
+		};
+		1536218128AC27FB00698541 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				150F48D428B5D816007985E0 /* CalculateViewController.swift */,
+				1536218228AC282B00698541 /* CurrencyListTableViewController.swift */,
+				1536218628AC2A1100698541 /* FavouriteCurrencyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1536218828AC2A3E00698541 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1536216D28AC27AE00698541 /* AppDelegate.swift */,
+				1536216F28AC27AE00698541 /* SceneDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1536218928AC2A7600698541 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1536218A28AC2A8D00698541 /* MainTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		1536218C28AC2C7300698541 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1536218D28AC2C8800698541 /* UIColor.swift */,
+				153621B628B4254100698541 /* TableViewSimilarSettings.swift */,
+				153621B428B423D700698541 /* StringExtension.swift */,
+				150F48D928B6BD5E007985E0 /* UIButton.swift */,
+				150F48DD28BA54CB007985E0 /* UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1536218F28AE42AE00698541 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1536219628AE91BE00698541 /* CurrencyModelDBO.swift */,
+				150F48FA28BD2E04007985E0 /* CurrencyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1536219C28B0D48300698541 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				153621A028B0FF0000698541 /* CurrencyTableViewCell.xib */,
+				150F48D528B5D816007985E0 /* CalculateViewController.xib */,
+				1536217828AC27AF00698541 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1536216928AC27AE00698541 /* heLLo converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1536217E28AC27AF00698541 /* Build configuration list for PBXNativeTarget "heLLo converter" */;
+			buildPhases = (
+				1536216628AC27AE00698541 /* Sources */,
+				1536216728AC27AE00698541 /* Frameworks */,
+				1536216828AC27AE00698541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "heLLo converter";
+			packageProductDependencies = (
+				153621A428B29A9D00698541 /* Realm */,
+				153621A628B29A9D00698541 /* RealmSwift */,
+			);
+			productName = "heLLo converter";
+			productReference = 1536216A28AC27AE00698541 /* heLLo converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1536216228AC27AE00698541 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1536216928AC27AE00698541 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1536216528AC27AE00698541 /* Build configuration list for PBXProject "heLLo converter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1536216128AC27AE00698541;
+			packageReferences = (
+				153621A328B29A9D00698541 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 1536216B28AC27AE00698541 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1536216928AC27AE00698541 /* heLLo converter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1536216828AC27AE00698541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1536217A28AC27AF00698541 /* LaunchScreen.storyboard in Resources */,
+				153621A228B0FF0000698541 /* CurrencyTableViewCell.xib in Resources */,
+				1536217728AC27AF00698541 /* Assets.xcassets in Resources */,
+				150F48D728B5D816007985E0 /* CalculateViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1536216628AC27AE00698541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F48E628BCC36D007985E0 /* ParseManager.swift in Sources */,
+				1536218E28AC2C8800698541 /* UIColor.swift in Sources */,
+				153621A928B29F6700698541 /* StorageManager.swift in Sources */,
+				153621B728B4254100698541 /* TableViewSimilarSettings.swift in Sources */,
+				150F48D628B5D816007985E0 /* CalculateViewController.swift in Sources */,
+				150F48DA28B6BD5E007985E0 /* UIButton.swift in Sources */,
+				1536218328AC282B00698541 /* CurrencyListTableViewController.swift in Sources */,
+				1536218B28AC2A8D00698541 /* MainTabBarController.swift in Sources */,
+				1536219728AE91BE00698541 /* CurrencyModelDBO.swift in Sources */,
+				1536216E28AC27AE00698541 /* AppDelegate.swift in Sources */,
+				150F48FB28BD2E04007985E0 /* CurrencyModel.swift in Sources */,
+				153621B528B423D700698541 /* StringExtension.swift in Sources */,
+				150F48DE28BA54CB007985E0 /* UIView.swift in Sources */,
+				1536217028AC27AE00698541 /* SceneDelegate.swift in Sources */,
+				153621A128B0FF0000698541 /* CurrencyTableViewCell.swift in Sources */,
+				1536218728AC2A1100698541 /* FavouriteCurrencyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1536217828AC27AF00698541 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1536217928AC27AF00698541 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1536217C28AC27AF00698541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1536217D28AC27AF00698541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1536217F28AC27AF00698541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WM2J5647TH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "heLLo converter/Resource/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SergeyKuznetsov.heLLo-converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1536218028AC27AF00698541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WM2J5647TH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "heLLo converter/Resource/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SergeyKuznetsov.heLLo-converter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1536216528AC27AE00698541 /* Build configuration list for PBXProject "heLLo converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1536217C28AC27AF00698541 /* Debug */,
+				1536217D28AC27AF00698541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1536217E28AC27AF00698541 /* Build configuration list for PBXNativeTarget "heLLo converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1536217F28AC27AF00698541 /* Debug */,
+				1536218028AC27AF00698541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		153621A328B29A9D00698541 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		153621A428B29A9D00698541 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 153621A328B29A9D00698541 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		153621A628B29A9D00698541 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 153621A328B29A9D00698541 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1536216228AC27AE00698541 /* Project object */;
+}

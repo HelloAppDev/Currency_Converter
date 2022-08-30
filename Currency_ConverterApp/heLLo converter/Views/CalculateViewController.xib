@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculateViewController" customModule="heLLo_converter" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButton" destination="RYj-Mq-7cB" id="g8k-Np-kuZ"/>
+                <outlet property="bottomCharCodeLabel" destination="l4L-Se-jRo" id="cyq-lU-hWF"/>
+                <outlet property="bottomFlagButton" destination="bJr-8i-4X0" id="mRk-xJ-w2s"/>
+                <outlet property="bottomValueLabel" destination="cAE-Yi-zK4" id="XPx-o0-jdZ"/>
+                <outlet property="topButton" destination="Tyt-3a-8Ww" id="6u3-HA-7Ep"/>
+                <outlet property="topCharCodeLabel" destination="hAn-0h-qau" id="Sze-5r-Aiy"/>
+                <outlet property="topFlagButton" destination="wMZ-um-we7" id="9ZG-l6-jxD"/>
+                <outlet property="topValueLabel" destination="1R5-o3-oPu" id="JtK-wm-MtZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-3a-8Ww" customClass="HighlightedButton" customModule="heLLo_converter" customModuleProvider="target">
+                    <rect key="frame" x="3" y="64" width="408" height="140"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="XWa-FL-59p"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="currencyAction:" destination="-1" eventType="touchUpInside" id="lVz-IR-O0I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-Mq-7cB" customClass="HighlightedButton" customModule="heLLo_converter" customModuleProvider="target">
+                    <rect key="frame" x="3" y="208" width="408" height="140"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="fsF-Qi-M7U"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="currencyAction:" destination="-1" eventType="touchUpInside" id="FTx-X1-8uT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDO-iM-nKh">
+                    <rect key="frame" x="26" y="354" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="98x-qb-zLN"/>
+                        <constraint firstAttribute="height" constant="98" id="mUz-Qq-g3o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="7"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="Gm0-9i-OMS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR6-UK-hZc">
+                    <rect key="frame" x="158" y="354" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="CBB-UK-gVP"/>
+                        <constraint firstAttribute="width" constant="98" id="FbZ-La-lMm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="8"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="OZ5-b6-4B5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsB-gG-WXD">
+                    <rect key="frame" x="290" y="354" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="ESV-53-gDG"/>
+                        <constraint firstAttribute="height" constant="98" id="qRA-4w-BxJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="9"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="U13-fS-pFf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKq-4h-ngx">
+                    <rect key="frame" x="26" y="453" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="62q-yW-otr"/>
+                        <constraint firstAttribute="height" constant="98" id="CJq-Tt-MJ9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="676-EH-E1P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFt-f8-eD8">
+                    <rect key="frame" x="158" y="453" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="7ET-tl-CWF"/>
+                        <constraint firstAttribute="width" constant="98" id="TVZ-33-19w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="5"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="Nfa-mc-MmI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nee-L7-qV5">
+                    <rect key="frame" x="290" y="453" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="JJA-HZ-yLO"/>
+                        <constraint firstAttribute="height" constant="98" id="ZPE-tF-qJo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="6"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="5CE-Iw-tbw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-S2-C50">
+                    <rect key="frame" x="26" y="552" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="14W-45-XuR"/>
+                        <constraint firstAttribute="height" constant="98" id="fah-RV-XZT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="ZZ4-A4-UMj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G1-zk-WgP">
+                    <rect key="frame" x="158" y="552" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="2ZH-rs-HCW"/>
+                        <constraint firstAttribute="width" constant="98" id="po3-hP-TJ3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="2"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="Akj-GO-XtP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPi-ky-hyT">
+                    <rect key="frame" x="290" y="552" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="E9r-zI-T7N"/>
+                        <constraint firstAttribute="height" constant="98" id="Hg8-js-zVq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="3"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="QIv-rt-dP1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJX-7B-KZD">
+                    <rect key="frame" x="26" y="651" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="4r0-z6-eYZ"/>
+                        <constraint firstAttribute="height" constant="98" id="L3K-o9-KJL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title=","/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="pointAction:" destination="-1" eventType="touchUpInside" id="kdS-h3-cEx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0n-ch-xbh">
+                    <rect key="frame" x="158" y="651" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="98" id="aSZ-M9-Cki"/>
+                        <constraint firstAttribute="width" constant="98" id="stO-gK-6S3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="0"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="numPadActions:" destination="-1" eventType="touchUpInside" id="Ip4-80-dDS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9N-hA-p7b">
+                    <rect key="frame" x="290" y="651" width="98" height="98"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="LTg-28-hdO"/>
+                        <constraint firstAttribute="height" constant="98" id="hd7-m0-SEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="C"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="49"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="deleteAction:" destination="-1" eventType="touchUpInside" id="AfQ-aU-BY0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-0h-qau">
+                    <rect key="frame" x="40" y="178" width="49" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="IIl-gP-gx5"/>
+                        <constraint firstAttribute="width" constant="49" id="jAF-ZJ-OzI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMZ-um-we7">
+                    <rect key="frame" x="26" y="99" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="lp4-Z3-aTn"/>
+                        <constraint firstAttribute="height" constant="70" id="pbq-fZ-SHa"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Нажмите чтобы выбрать" titleAlignment="center">
+                        <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="10"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="currencySelectionAction:" destination="-1" eventType="touchUpInside" id="gBq-9P-apb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJr-8i-4X0">
+                    <rect key="frame" x="26" y="243" width="70" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Нажмите чтобы выбрать" titleAlignment="center">
+                        <fontDescription key="titleFontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="10"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="conrerRadius">
+                            <real key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="currencySelectionAction:" destination="-1" eventType="touchUpInside" id="02g-mm-IUq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="cAE-Yi-zK4">
+                    <rect key="frame" x="221" y="215" width="170" height="67"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4L-Se-jRo">
+                    <rect key="frame" x="40" y="321" width="49" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="5xT-wy-GeX"/>
+                        <constraint firstAttribute="height" constant="25" id="pk6-wD-5mB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="1R5-o3-oPu">
+                    <rect key="frame" x="221" y="64" width="170" height="69"/>
+                    <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Tyt-3a-8Ww" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0fX-lO-SxC"/>
+                <constraint firstItem="MJX-7B-KZD" firstAttribute="top" secondItem="M9k-S2-C50" secondAttribute="bottom" constant="1" id="20A-CU-7xP"/>
+                <constraint firstItem="Tyt-3a-8Ww" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="2bF-gm-j9O"/>
+                <constraint firstItem="Nee-L7-qV5" firstAttribute="top" secondItem="NsB-gG-WXD" secondAttribute="bottom" constant="1" id="2dj-Zc-oQo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nee-L7-qV5" secondAttribute="trailing" constant="26" id="3Ul-bT-BST"/>
+                <constraint firstItem="K0n-ch-xbh" firstAttribute="leading" secondItem="MJX-7B-KZD" secondAttribute="trailing" constant="34" id="4OB-Kv-PW8"/>
+                <constraint firstItem="hAn-0h-qau" firstAttribute="top" secondItem="wMZ-um-we7" secondAttribute="bottom" constant="9" id="5Ng-U2-wMr"/>
+                <constraint firstItem="6G1-zk-WgP" firstAttribute="top" secondItem="vFt-f8-eD8" secondAttribute="bottom" constant="1" id="5dW-y2-mXM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tyt-3a-8Ww" secondAttribute="trailing" constant="3" id="9Fq-6b-LeV"/>
+                <constraint firstItem="KDO-iM-nKh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="310" id="BWn-8N-UIo"/>
+                <constraint firstItem="NsB-gG-WXD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="310" id="C6c-Sf-1ge"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NsB-gG-WXD" secondAttribute="trailing" constant="26" id="ETY-Ax-DD7"/>
+                <constraint firstItem="bJr-8i-4X0" firstAttribute="width" secondItem="RYj-Mq-7cB" secondAttribute="width" multiplier="0.171569" id="EaP-jZ-8uD"/>
+                <constraint firstItem="cAE-Yi-zK4" firstAttribute="height" secondItem="RYj-Mq-7cB" secondAttribute="height" multiplier="0.478571" id="F8v-S4-9vo"/>
+                <constraint firstItem="oKq-4h-ngx" firstAttribute="top" secondItem="KDO-iM-nKh" secondAttribute="bottom" constant="1" id="FPa-v9-Ufc"/>
+                <constraint firstItem="wMZ-um-we7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="55" id="GTw-yp-rcB"/>
+                <constraint firstItem="MJX-7B-KZD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="Ikq-zo-wNf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tyt-3a-8Ww" secondAttribute="trailing" constant="3" id="L9K-Cl-UaU"/>
+                <constraint firstItem="bJr-8i-4X0" firstAttribute="height" secondItem="RYj-Mq-7cB" secondAttribute="height" multiplier="0.5" id="LLU-AR-01b"/>
+                <constraint firstItem="hAn-0h-qau" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="LNj-YH-RJN"/>
+                <constraint firstItem="wMZ-um-we7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="LTU-hx-xRY"/>
+                <constraint firstItem="vFt-f8-eD8" firstAttribute="top" secondItem="sR6-UK-hZc" secondAttribute="bottom" constant="1" id="Ml7-5k-rOn"/>
+                <constraint firstItem="cAE-Yi-zK4" firstAttribute="width" secondItem="RYj-Mq-7cB" secondAttribute="width" multiplier="0.416667" id="Nmq-4I-OYZ"/>
+                <constraint firstItem="1R5-o3-oPu" firstAttribute="height" secondItem="Tyt-3a-8Ww" secondAttribute="height" multiplier="0.492857" id="OJD-Bn-xeQ"/>
+                <constraint firstItem="sR6-UK-hZc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="310" id="RIc-PC-GlH"/>
+                <constraint firstItem="KDO-iM-nKh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="Ttg-P1-PBZ"/>
+                <constraint firstItem="1R5-o3-oPu" firstAttribute="width" secondItem="Tyt-3a-8Ww" secondAttribute="width" multiplier="0.416667" id="W80-Jq-ftB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jPi-ky-hyT" secondAttribute="trailing" constant="26" id="W9q-UH-AWD"/>
+                <constraint firstItem="Nee-L7-qV5" firstAttribute="leading" secondItem="vFt-f8-eD8" secondAttribute="trailing" constant="34" id="X4l-ay-pXW"/>
+                <constraint firstItem="oKq-4h-ngx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="XVz-7F-kH1"/>
+                <constraint firstItem="M9k-S2-C50" firstAttribute="top" secondItem="oKq-4h-ngx" secondAttribute="bottom" constant="1" id="Z3m-gp-Eft"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T9N-hA-p7b" secondAttribute="trailing" constant="26" id="ZI4-H0-zD2"/>
+                <constraint firstItem="l4L-Se-jRo" firstAttribute="top" secondItem="bJr-8i-4X0" secondAttribute="bottom" constant="8" symbolic="YES" id="ZiK-Q9-7iZ"/>
+                <constraint firstItem="T9N-hA-p7b" firstAttribute="top" secondItem="jPi-ky-hyT" secondAttribute="bottom" constant="1" id="bjC-Kq-2OJ"/>
+                <constraint firstItem="jPi-ky-hyT" firstAttribute="top" secondItem="Nee-L7-qV5" secondAttribute="bottom" constant="1" id="cj9-Kt-fhE"/>
+                <constraint firstItem="bJr-8i-4X0" firstAttribute="top" secondItem="RYj-Mq-7cB" secondAttribute="bottom" constant="-105" id="dvM-hA-eUr"/>
+                <constraint firstItem="1R5-o3-oPu" firstAttribute="top" secondItem="Tyt-3a-8Ww" secondAttribute="top" id="epl-E3-Kfi"/>
+                <constraint firstItem="RYj-Mq-7cB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="fOJ-eO-Rzh"/>
+                <constraint firstItem="T9N-hA-p7b" firstAttribute="leading" secondItem="K0n-ch-xbh" secondAttribute="trailing" constant="34" id="fbi-hA-vTq"/>
+                <constraint firstItem="cAE-Yi-zK4" firstAttribute="top" secondItem="RYj-Mq-7cB" secondAttribute="top" constant="7" id="fzl-KS-DcC"/>
+                <constraint firstItem="NsB-gG-WXD" firstAttribute="leading" secondItem="sR6-UK-hZc" secondAttribute="trailing" constant="34" id="gNP-bd-HzW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RYj-Mq-7cB" secondAttribute="trailing" constant="3" id="hf6-KV-MMV"/>
+                <constraint firstItem="vFt-f8-eD8" firstAttribute="leading" secondItem="oKq-4h-ngx" secondAttribute="trailing" constant="34" id="la0-oU-586"/>
+                <constraint firstItem="K0n-ch-xbh" firstAttribute="top" secondItem="6G1-zk-WgP" secondAttribute="bottom" constant="1" id="lbx-OM-JGs"/>
+                <constraint firstItem="1R5-o3-oPu" firstAttribute="trailing" secondItem="Tyt-3a-8Ww" secondAttribute="trailing" constant="-20" id="nVO-4a-ze8"/>
+                <constraint firstItem="RYj-Mq-7cB" firstAttribute="leading" secondItem="bJr-8i-4X0" secondAttribute="trailing" constant="-93" id="oUI-YJ-HiF"/>
+                <constraint firstItem="RYj-Mq-7cB" firstAttribute="top" secondItem="Tyt-3a-8Ww" secondAttribute="bottom" constant="4" id="oiN-4d-62J"/>
+                <constraint firstItem="sR6-UK-hZc" firstAttribute="leading" secondItem="KDO-iM-nKh" secondAttribute="trailing" constant="34" id="opI-0a-Qlb"/>
+                <constraint firstItem="6G1-zk-WgP" firstAttribute="leading" secondItem="M9k-S2-C50" secondAttribute="trailing" constant="34" id="q2d-ae-3Zy"/>
+                <constraint firstItem="l4L-Se-jRo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="uGf-LU-dCs"/>
+                <constraint firstItem="cAE-Yi-zK4" firstAttribute="trailing" secondItem="RYj-Mq-7cB" secondAttribute="trailing" constant="-20" id="uTz-ZM-Ywm"/>
+                <constraint firstItem="Tyt-3a-8Ww" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="woB-oq-ahj"/>
+                <constraint firstItem="M9k-S2-C50" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="wrB-jG-gpv"/>
+                <constraint firstItem="jPi-ky-hyT" firstAttribute="leading" secondItem="6G1-zk-WgP" secondAttribute="trailing" constant="34" id="zr4-kR-pyA"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="RYj-Mq-7cB">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="Tyt-3a-8Ww">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+    </designables>
+</document>
