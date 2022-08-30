@@ -44,11 +44,33 @@ final class CurrencyListTableViewController: UITableViewController {
     
     private func fetchCurrenciesFromServer() {
         ParseManager.shared.fetchData { currencies in
+            var updatedCurrencies = currencies
+            
+            if let favouriteCurrencies = StorageManager.shared.getCurrencies(),
+               !favouriteCurrencies.isEmpty {
+                for index in 0..<updatedCurrencies.count {
+                    updatedCurrencies[index].isFavourite = favouriteCurrencies.contains(where: { $0.id == updatedCurrencies[index].id })
+                }
+            }
             self.currencies = currencies
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()
             StorageManager.shared.saveCurrencies(currencies: currencies.map { $0.asDBO() })
         }
+    }
+    
+    private func favouriteAction(at indexPath: IndexPath) -> UIContextualAction {
+        var object = currencies[indexPath.row]
+        let action = UIContextualAction(style: .normal, title: "Favourite") { action, view, completion in
+            object.isFavourite.toggle()
+            StorageManager.shared.updateCurrency(currency: object.asDBO())
+            self.currencies[indexPath.row] = object
+            completion(true)
+        }
+        action.backgroundColor = object.isFavourite ? .systemGreen : .systemGray
+        action.image = UIImage(systemName: "star")
+        
+        return action
     }
 }
 
@@ -82,22 +104,9 @@ extension CurrencyListTableViewController {
         return UISwipeActionsConfiguration(actions: [favouriteAction])
     }
     
-    func favouriteAction(at indexPath: IndexPath) -> UIContextualAction {
-        var object = currencies[indexPath.row]
-        let action = UIContextualAction(style: .normal, title: "Favourite") { action, view, completion in
-            object.isFavourite.toggle()
-            StorageManager.shared.updateCurrency(currency: object.asDBO())
-            self.currencies[indexPath.row] = object
-            completion(true)
-        }
-        action.backgroundColor = object.isFavourite ? .systemGreen : .systemGray
-        action.image = UIImage(systemName: "star")
-        
-        return action
-    }
+
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // переименовал в currency
         let currency = currencies[indexPath.row]
         
         delegate?.setupCurrency(currency: currency)

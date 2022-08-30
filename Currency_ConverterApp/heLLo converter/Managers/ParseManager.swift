@@ -26,7 +26,7 @@ final class ParseManager: NSObject {
     func fetchData(completion: @escaping ([CurrencyModel]) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {
             if let url = URL(string: "https://cbr.ru/scripts/XML_daily.asp"),
-            let parser = XMLParser(contentsOf: url) {
+               let parser = XMLParser(contentsOf: url) {
                 parser.delegate = self
                 guard parser.parse() else { return }
                 
