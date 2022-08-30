@@ -46,16 +46,16 @@ final class CurrencyListTableViewController: UITableViewController {
         ParseManager.shared.fetchData { currencies in
             var updatedCurrencies = currencies
             
-            if let favouriteCurrencies = StorageManager.shared.getCurrencies(),
+            if let favouriteCurrencies = StorageManager.shared.getFavouriteCurrencies(),
                !favouriteCurrencies.isEmpty {
                 for index in 0..<updatedCurrencies.count {
                     updatedCurrencies[index].isFavourite = favouriteCurrencies.contains(where: { $0.id == updatedCurrencies[index].id })
                 }
             }
-            self.currencies = currencies
+            self.currencies = updatedCurrencies
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()
-            StorageManager.shared.saveCurrencies(currencies: currencies.map { $0.asDBO() })
+            StorageManager.shared.saveCurrencies(currencies: updatedCurrencies.map { $0.asDBO() })
         }
     }
     
@@ -103,8 +103,6 @@ extension CurrencyListTableViewController {
         let favouriteAction = favouriteAction(at: indexPath)
         return UISwipeActionsConfiguration(actions: [favouriteAction])
     }
-    
-
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currency = currencies[indexPath.row]

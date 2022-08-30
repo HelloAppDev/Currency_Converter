@@ -14,15 +14,19 @@ protocol CurrencySelectionDelegate: AnyObject {
 
 final class CalculateViewController: UIViewController {
     
+    @IBOutlet private weak var topCurrencyView: UIView!
     @IBOutlet private weak var topButton: UIButton!
     @IBOutlet private weak var topCharCodeLabel: UILabel!
     @IBOutlet private weak var topValueLabel: UILabel!
     @IBOutlet private weak var topFlagButton: UIButton!
+    @IBOutlet private weak var topFlagImageView: UIImageView!
     
+    @IBOutlet private weak var bottomCurrencyView: UIView!
     @IBOutlet private weak var bottomButton: UIButton!
     @IBOutlet private weak var bottomCharCodeLabel: UILabel!
     @IBOutlet private weak var bottomValueLabel: UILabel!
     @IBOutlet private weak var bottomFlagButton: UIButton!
+    @IBOutlet private weak var bottomFlagImageView: UIImageView!
     
     private var topCurrencyNominal = ""
     private var topCurrencyCourse = ""
@@ -39,7 +43,7 @@ final class CalculateViewController: UIViewController {
     private func initialSettings() {
         self.title = "Калькулятор"
         currencyListTableViewController.delegate = self
- 
+        
         topValueLabel.isUserInteractionEnabled = false
         bottomValueLabel.isUserInteractionEnabled = false
     }
@@ -54,12 +58,19 @@ final class CalculateViewController: UIViewController {
         } else {
             topButton.isSelected = false
         }
+        
+        topCurrencyView.backgroundColor = topButton.isSelected
+                                        ? .tabBarItemLight
+                                        : .systemBackground
+        bottomCurrencyView.backgroundColor = bottomButton.isSelected
+                                           ? .tabBarItemLight
+                                           : .systemBackground
     }
     
     @IBAction func currencySelectionAction(_ sender: UIButton) {
-        sender.isSelected.toggle()
         self.navigationController?.pushViewController(currencyListTableViewController, animated: true)
         
+        sender.isSelected.toggle()
         if sender.tag == 0 {
             bottomFlagButton.isSelected = false
         } else {
@@ -102,7 +113,7 @@ final class CalculateViewController: UIViewController {
             }
         } else if bottomButton.isSelected {
             if let bottomValue = bottomValueLabel.text,
-            !bottomValue.contains(",") {
+               !bottomValue.contains(",") {
                 bottomValueLabel.text = bottomValue + ","
             }
         }
@@ -113,23 +124,26 @@ extension CalculateViewController: CurrencySelectionDelegate {
     
     func setupCurrency(currency: CurrencyModel) {
         if topFlagButton.isSelected {
+            bottomFlagButton.isSelected = false
             topCurrencyCourse = currency.value
             topCharCodeLabel.text = currency.charCode
             topCurrencyNominal = currency.nominal
-            topFlagButton.setImage(UIImage(named: currency.charCode), for: .normal)
+            topFlagImageView.image = UIImage(named: currency.charCode)
             if topCharCodeLabel.text != nil {
                 topFlagButton.setTitle("", for: .normal)
                 topFlagButton.borderWidth = 0
+                topFlagButton.backgroundColor = .clear
             }
         } else if bottomFlagButton.isSelected {
             topFlagButton.isSelected = false
             bottomCurrencyCourse = currency.value
             bottomCharCodeLabel.text = currency.charCode
             bottomCurrencyNominal = currency.nominal
-            bottomFlagButton.setImage(UIImage(named: currency.charCode), for: .normal)
+            bottomFlagImageView.image = UIImage(named: currency.charCode)
             if bottomCharCodeLabel.text != nil {
                 bottomFlagButton.setTitle("", for: .normal)
                 bottomFlagButton.borderWidth = 0
+                bottomFlagButton.backgroundColor = .clear
             }
         }
     }

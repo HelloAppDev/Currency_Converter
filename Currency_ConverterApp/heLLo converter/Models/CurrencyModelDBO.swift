@@ -41,6 +41,7 @@ class CurrencyModelDBO: Object {
                              charCode: charCode,
                              name: name,
                              value: value,
-                             nominal: nominal)
+                             nominal: nominal,
+                             isFavourite: isFavourite)
     }
 }
